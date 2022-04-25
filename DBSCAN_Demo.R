@@ -40,7 +40,8 @@ ggplot(data=dd_to_analyze,aes(BC,CO2)) +
   geom_point(aes(color = Anomaly)) +
   labs(x = bquote("BC (ng/"~m^3~")"),
        y = bquote(CO[2]~" (ppm)")) +
-  scale_color_manual(values = c("Black","Red"),labels = c("Normal","Anomaly"))
+  scale_color_manual(values = c("Black","Red"),labels = c("Normal","Anomaly")) + 
+  theme_classic()
 
 ## Determine what percentage of data is Normal, Anomaly
 
