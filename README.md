@@ -35,11 +35,11 @@ Once we determine all DBSCAN labeled anomalies, we can analyze their distributio
 
 `dd_to_analyze <- dd_to_analyze %>%
   cbind(.,"Anomaly"=dbscan_anomalies) %>%
-  dplyr::mutate(Anomaly = as.factor(Anomaly))
+  dplyr::mutate(Anomaly = as.factor(Anomaly))`
 
-require(tidyverse)
+`require(tidyverse)`
 
-ggplot(data=dd_to_analyze,aes(BC,CO2)) +
+`ggplot(data=dd_to_analyze,aes(BC,CO2)) +
   geom_point(aes(color = Anomaly)) +
   labs(x = bquote("BC (ng/"~m^3~")"),
        y = bquote(CO[2]~" (ppm)")) +
