@@ -39,4 +39,3 @@ return_dbscan_anomalies <- function(data,f_value){
   return(assignments)
 }
 
-
