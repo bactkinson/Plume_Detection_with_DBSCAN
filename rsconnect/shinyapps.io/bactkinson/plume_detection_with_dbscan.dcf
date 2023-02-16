@@ -1,0 +1,13 @@
+name: plume_detection_with_dbscan
+title:
+username:
+account: bactkinson
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8274102
+bundleId: 6829976
+url: https://bactkinson.shinyapps.io/plume_detection_with_dbscan/
+when: 1675993888.12327
+lastSyncTime: 1675993888.12328
+asMultiple: FALSE
+asStatic: FALSE

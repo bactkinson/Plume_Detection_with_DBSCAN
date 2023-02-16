@@ -36,6 +36,6 @@ return_dbscan_anomalies <- function(data,f_value){
   
   print("Execution complete")
   
-  return(assignments)
+  return(as.factor(assignments))
 }
 
