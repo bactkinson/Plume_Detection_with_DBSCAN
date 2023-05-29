@@ -52,7 +52,7 @@ We produce the same scatterplot above.
 
 One could also extract these anomalies for further analysis (e.g., k-means, PCA, etc.).
 
-If you have any issues in implementing this method or have suggestions for improvement, I'd love to hear about it. Please raise it as an issue ticket in the repository. Alternatively, email Blake.W.Actkinson@rice.edu.
+If you have any issues in implementing this method or have suggestions for improvement, I'd love to hear about it. Please raise it as an issue ticket in the repository. Alternatively, email blakeactkinson@gmail.com.
 
 This work was created by Blake Actkinson with input from Robert Griffin at Rice University.
 

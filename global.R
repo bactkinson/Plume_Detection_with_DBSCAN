@@ -20,3 +20,7 @@ source("R/DBSCAN_Plume_Detection.R")
 #   cbind(.,"Anomaly"=db_output,"Time"=dd$LST) %>%
 #   dplyr::mutate(Anomaly = as.factor(Anomaly))
 
+
+## To do:
+## 5/10/2023 Make sure there is default data set loaded
+## Rewrite GitHub repo description to walk users through the app.
