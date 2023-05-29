@@ -27,7 +27,10 @@ server <- function(input,output){
   ## Click the action button and perform the DBSCAN analysis on the select subset
   ## of analytes
   observeEvent(input$analyze, {
-       
+    
+    id <- showNotification("Analyzing Data...", duration = NULL, closeButton = FALSE)
+    on.exit(removeNotification(id), add = TRUE) 
+    
     validate(need(input$upload,"Need to upload data!"))
 
     validate(need(input$analytes,"Need to select analytes for analysis!"))
@@ -46,7 +49,7 @@ server <- function(input,output){
       mutate(pt_color = dplyr::case_when(Anomaly == 1 ~ "black",
                                          Anomaly == 2 ~ "red"))
     
-    output$test <- renderTable(head(final_output_data))    
+    output$table_output <- renderTable(head(final_output_data))    
     
     output$ts_plot <- renderPlot({
       ggplot(data = final_output_data,aes_string(x = input$x_value, y = input$y_value))+

@@ -6,7 +6,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       
-      fileInput("upload", NULL),
+      fileInput("upload", "Upload Data File"),
       
       ## Choose epsilon value
       numericInput("f_val","f value for MinPts estimate", value = 0.01, step = 0.01),
@@ -41,7 +41,7 @@ ui <- fluidPage(
       ## Time series graphic
       plotOutput("ts_plot"),
       
-      tableOutput("test")
+      tableOutput("table_output")
     )
   )
 )

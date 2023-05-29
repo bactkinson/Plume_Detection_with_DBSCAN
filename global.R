@@ -8,12 +8,12 @@ library(dbscan)
 
 library(shiny)
 
-# dd <- fread("data/Demo_Data.csv")
+# default_data <- fread("data/Demo_Data.csv")
 source("R/DBSCAN_Plume_Detection.R")
 
 # dd_subset <- dd %>%
 #     dplyr::select(BC,CO2,NOx,UFP)
-#   
+# 
 # db_output <- return_dbscan_anomalies(dd_subset,f_value = 0.03)
 # 
 # dd_subset <- dd_subset %>%
@@ -22,5 +22,5 @@ source("R/DBSCAN_Plume_Detection.R")
 
 
 ## To do:
-## 5/10/2023 Make sure there is default data set loaded
-## Rewrite GitHub repo description to walk users through the app.
+## Rewrite GitHub repo to walk users through the app
+
