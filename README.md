@@ -1,6 +1,8 @@
 # Plume_Detection_with_DBSCAN
 
-This repository contains code for the DBSCAN Plume Detection Tool R Shiny app. 
+This repository contains code for the DBSCAN Plume Detection Tool R Shiny app.
+
+**The app can be accessed at the following URL:** https://bactkinson.shinyapps.io/plume_detection_with_dbscan/
 
 ### Overview
 To address plume detection in time series, we recast the problem as an anomaly detection problem and visualize plumes as anomalies scattered outwards from an n-dimensional origin. A graphical example of this concept is below:
@@ -50,6 +52,8 @@ The scatterplot depicts labeled plume anomalies in red and non-plume anomalies i
 To control which data are displayed on the scatterplot, use the drop down menus labeled "Choose variable to be plotted on x-axis" and "Choose variable to be plotted on y-axis." Variable names in the dropdown menu correspond to the variable names in the input data file.
 
 To save the scatterplot image, click the "Save plot to .png" button. To save the labeled data, click the "Save output to .csv" button.
+
+**Important Note:** For large datasets (>15000 data points), it's recommended to clone the app from this repository and run it locally. The app is likely to run into shinyapps.io memory constraints with larger datasets (the app will not run and instead timeout  upon hitting the ANALYZE button).
 
 If you have any issues in implementing this method or have suggestions for improvement, I'd love to hear about it. Please raise it as an issue ticket in the repository. Alternatively, email blakeactkinson@gmail.com.
 
