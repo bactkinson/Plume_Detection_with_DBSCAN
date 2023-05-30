@@ -11,7 +11,7 @@ To address plume detection in time series, we recast the problem as an anomaly d
 
 One could constrict their analysis to these identified anomalies to understand source impacts on collected mobile air pollution measurements.
 
-We have packaged this method into an R Shiny app deployed through shinyapps.io. The remainder of this README will walk you through how to use the app. If desired, you could also run the method in an R console directly using the functions written in the R/DBSCAN_Plume_Detection.R file.
+We have packaged this method into an R Shiny app deployed through shinyapps.io. The remainder of this README will walk you through how to use the app. If desired, you could also clone the app from this repository and run it locally.
 
 ### DBSCAN Plume Detection Tool: Basic Usage
 In this walkthrough, we will upload a file called "Demo_Data.csv". The file is located within the data folder in this repository. The app is currently written to only accept .csv or .tsv file formats with the name of the variable stored in the first row of the file. Here's a snapshot of DemoData.csv:
