@@ -29,7 +29,7 @@ server <- function(input,output){
   observeEvent(input$analyze, {
     
     id <- showNotification("Analyzing Data...", duration = NULL, closeButton = FALSE)
-    on.exit(removeNotification(id), add = TRUE) 
+    on.exit(removeNotification(id), add = TRUE)
     
     validate(need(input$upload,"Need to upload data!"))
 
